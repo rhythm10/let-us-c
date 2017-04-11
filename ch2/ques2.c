@@ -6,6 +6,8 @@ int main(int argc, char const *argv[])
 
 	printf("Enter any No. = ");
 	scanf("%d",&n);
+	
+    //hehe do yourself 
 
 	if(n % 2 == 0)
 	  printf("the Number is even\n");
