@@ -5,10 +5,10 @@ int main(int argc,char const *argv[])
 	
 	int cp, sp, p ,l ;
 
-	profitf("Enter selling price = ");
+	printf("Enter selling price = ");
 	scanf("%d",&sp);
 
-	profitf("Enter cost price = ");
+	printf("Enter cost price = ");
 	scanf("%d",&cp);
 
 	p = sp - cp;
