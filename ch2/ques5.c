@@ -2,12 +2,12 @@
 										int main(int argc, char const *argv[])
 
 										{
-											int n, a, b, c, d, e, l, re, abcde ;
+											int n, a, b, c, d, e, l, n_copy, r;
 
 											printf("Enter any Five Digit Number = ");
 											scanf("%d",&n);
 
-											n = abcde;
+											n_copy = n;
 
 											a = n % 10;
 											n = n/10;
@@ -23,15 +23,21 @@
 
 											e = n % 10;
 
-											printf("%d%d%d%d%d\n",a ,b ,c ,d ,e);
+											r = 0;
 
-											re = abcde;
+											r = r * 10 + a;
+											r = r * 10 + b;
+											r = r * 10 + c;
+											r = r * 10 + d;
+											r = r * 10 + e;
 
-											if(n == re) {
-												printf("no. reversible is equal to itself");
+											printf("your reverse no .is = %d\n",r);
+
+											if(n_copy == r) {
+												printf("no. reversible is equal to itself\n");
 											}
 											else{
-												printf("not equal");
+												printf("not equal\n");
 											}
 
 
